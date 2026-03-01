@@ -54,8 +54,8 @@ const emp1 = new Employee("Fred Burger", "Marketing");
 const emp2 = new Employee("Sebastian Man", "Human Resources");
 
 // Create sample Managers
-const mgr1 = new Manager("Chuckie McManman", "Engineering", 12);
-const mgr2 = new Manager("Silly Guy-Litman", "Operations", 5);
+const mgr1 = new Manager("Chuckie McManman", "Engineering", 10);
+const mgr2 = new Manager("Silly Guy-Litman", "Operations", 6);
 
 // Add them to the company
 myCompany.addEmployee(emp1);
