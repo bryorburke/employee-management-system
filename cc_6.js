@@ -1,4 +1,4 @@
-// Step 2: Create the Base Employee Class
+ // Employee Base Class
 class Employee {
     constructor(name, department) {
         this.name = name;
@@ -10,7 +10,7 @@ class Employee {
     }
 }
 
-// Step 3: Create the Manager Subclass
+// Manager Subclass
 class Manager extends Employee {
     constructor(name, department, teamSize) {
         // Use super() to call the parent constructor
@@ -24,7 +24,7 @@ class Manager extends Employee {
     }
 }
 
-// Step 5: Create the Company Class
+// Company Class
 class Company {
     constructor() {
         this.employees = []; // Array to store employee/manager instances
@@ -37,25 +37,25 @@ class Company {
 
     // Method to log descriptions of all employees
     listEmployees() {
-        console.log("--- Company Employee List ---");
+        console.log("Company Employee List");
         this.employees.forEach(emp => {
             console.log(emp.describe());
         });
     }
 }
 
-// Step 4 & 6: Instantiate Objects and Test Functionality
+// Instantiate Objects and Test Functionality
 
 // Create a new Company instance
 const myCompany = new Company();
 
 // Create sample Employees
-const emp1 = new Employee("Alice Johnson", "Marketing");
-const emp2 = new Employee("Bob Smith", "Human Resources");
+const emp1 = new Employee("Fred Burger", "Marketing");
+const emp2 = new Employee("Sebastian Man", "Human Resources");
 
 // Create sample Managers
-const mgr1 = new Manager("Charlie Davis", "Engineering", 12);
-const mgr2 = new Manager("Diana Prince", "Operations", 5);
+const mgr1 = new Manager("Chuckie McManman", "Engineering", 12);
+const mgr2 = new Manager("Silly Guy-Litman", "Operations", 5);
 
 // Add them to the company
 myCompany.addEmployee(emp1);
