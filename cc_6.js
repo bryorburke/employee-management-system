@@ -1,3 +1,8 @@
+ // Intro Message
+console.log("===========================================");
+console.log("   EMPLOYEE MANAGEMENT SYSTEM v1.0         ");
+console.log("===========================================");
+
  // Employee Base Class
 class Employee {
     constructor(name, department) {
